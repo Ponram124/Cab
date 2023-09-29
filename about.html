@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Car Booking Form</title>
+    <link rel="stylesheet" type="text/css" href="stylee.css">
+</head>
+<body>
+    <h2>Car Booking</h2>
+    <form id="bookingForm" action="https://formspree.io/f/mqkvgeqq" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required><br><br>
+
+        <label for="pickup_location">Pickup Location:</label>
+        <input type="text" id="pickup_location" name="pickup_location" required><br><br>
+
+        <label for="dropoff_location">Dropoff Location:</label>
+        <input type="text" id="dropoff_location" name="dropoff_location" required><br><br>
+
+        <label for="pickup_date">Pickup Date:</label>
+        <input type="date" id="pickup_date" name="pickup_date" required><br><br>
+
+        <label for="return_date">Return Date:</label>
+        <input type="date" id="return_date" name="return_date" required><br><br>
+
+        <label for="car_model">Car Model:</label>
+        <select id="car_model" name="car_model" required>
+            <option value="sedan">Sedan</option>
+            <option value="suv">SUV</option>
+            <option value="compact">Compact</option>
+        </select><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+    
+    <script src="script.js"></script>
+</body>
+</html>
+
